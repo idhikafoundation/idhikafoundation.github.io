@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Idhika Foundation</title>
+	<meta name="description" content="Idhika Foundation is working towards <b>Empowerment</b> of <b>Women</b> and <b>Girl Child.</b> We are trying to bring change in perspective of women and girl child issues and outlook towards elderly">
+	<meta property="og:title" content="Idhika Foundation">
+	<meta property="og:url" content="https://idhikafoundation.com">
+	<meta property="og:description" content="Idhika Foundation is working towards <b>Empowerment</b> of <b>Women</b> and <b>Girl Child.</b> We are trying to bring change in perspective of women and girl child issues and outlook towards elderly">
+	<meta property="og:image" content="https://idhikafoundation/img/og_idhikafoundation.jpg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="https://idhikafoundation.com">
+	<meta name="twitter:creator" content="@idhikaF">
+	<meta name="twitter:title" content="Idhika Foundation">
+	<meta name="twitter:description" content="Idhika Foundation is working towards <b>Empowerment</b> of <b>Women</b> and <b>Girl Child.</b> We are trying to bring change in perspective of women and girl child issues and outlook towards elderly">
+	<meta name="twitter:image" content="https://idhikafoundation/img/og_idhikafoundation.jpg">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/mdb.min.css">
+	<link rel="stylesheet" href="../css/all.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg fixed-top navbar-dark amber darken-2 z-depth-3">
+			<a href="{{ site.url }}">
+				<img class="idhika-logo" src="../img/if_logo_text_small.svg" alt="">
+			</a>
+			<button class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="animated-icon"><span></span><span></span><span></span></div>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav">
+				    <li class="nav-item">
+				       	<a class="nav-link btn white black-text z-depth-3" href="#WhoWeAre"><b>About Us</b></a>
+				    </li>
+				    <li class="nav-item">
+				       	<a class="nav-link btn white black-text z-depth-3" href="#WhatWeDo"><b>Our Work</b></a>
+				    </li>
+				    <li class="nav-item">
+				       	<a class="nav-link btn white black-text z-depth-3" href="#Events"><b>Events</b></a>
+				    </li>
+				    <li class="nav-item">
+				       	<a class="nav-link btn white black-text z-depth-3" href="#Gallery"><b>Gallery</b></a>
+				    </li>
+				    <li class="nav-item">
+				        <a class="nav-link btn white black-text z-depth-3" href="#Contact"><b>Contact Us</b></a>
+				    </li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		{{ content }}
+	</main>
+
+	<footer class="page-footer font-small amber darken-2">
+		<h3 class="text-center text-shadow pt-3">Get in Touch</h3>
+		<div id="Contact">
+			<a href="tel:+91-9999797520" class="btn white black-text z-depth-3"><i class="fas fa-phone-alt mr-2"></i><b>Call</b></a>
+			<a href="mailto:info@idhikafoundation.com" class="btn white black-text z-depth-3"><i class="fas fa-at mr-2"></i><b>Email</b></a>
+		</div>
+		<div class="container mt-5">
+			<h3 class="text-center text-shadow">Join the Cause</h3>
+		    <div class="row">
+		      	<div class="col-md-12">
+		        	<div class="mb-5 flex-center">
+		          		<a class="btn-circle z-depth-3 fb-ic" href="https://www.facebook.com/idhikaF" target="_blank">
+		            		<i class="fab fa-facebook fa-lg white-text fa-2x"> </i>
+		          		</a>
+		          		<a class="btn-circle z-depth-3 tw-ic" href="https://twitter.com/IdhikaF" target="_blank">
+		            		<i class="fab fa-twitter fa-lg white-text fa-2x"> </i>
+		          		</a>
+		          		<a class="btn-circle z-depth-3 ins-ic" href="https://www.instagram.com/idhika_foundation/" target="_blank">
+		            		<i class="fab fa-instagram fa-lg white-text fa-2x"> </i>
+		          		</a>
+		        	</div>
+		      	</div>
+		    </div>
+		</div>
+		<div class="footer-copyright text-center py-3"><b>© 2020 Copyright:</b>
+			<a href="{{ site.url }}}"> <b>Idhika Foundation</b></a>
+		</div>
+	</footer>
+	<script>
+		$(document).ready(function () {
+		  	$('.hamburger').on('click', function () {
+		    	$('.animated-icon').toggleClass('open');
+		  	});
+		});
+		$('.navbar-collapse a').click(function(){
+            $(".navbar-collapse").collapse('hide');
+        });
+	</script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/mdb.min.js"></script>
+</body>
+</html>

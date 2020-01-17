@@ -1,0 +1,12 @@
+url: https://idhikafoundation.github.io
+author: Idhika Foundation
+layout_dir: _layouts
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+plugins:
+  - jekyll-sitemap

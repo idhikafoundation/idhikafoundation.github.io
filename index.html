@@ -1,0 +1,124 @@
+---
+layout: default
+---
+
+<div class="banner"></div>
+
+<div class="container">
+	<div id="WhoWeAre">
+		<div class="card heading-card z-depth-3 peach-gradient">
+		  	<div class="card-body">
+		    	<h5 class="white-text">Who We Are</h5>
+		  	</div>
+		</div>
+		<div class="card sub-card z-depth-3">
+			<div class="card-body">
+				<p class="card-text">
+					Idhika Foundation is working towards <b>Empowerment</b> of <b>Women</b> and <b>Girl Child.</b> We are trying to bring change in perspective of women and girl child issues and outlook towards elderly.<br><br>
+					We want them to have better <b>Quality of Life</b>. Empowerment includes the action of spreading awareness through education, equipping and allowing women to make life determining decisions through different problems in society. We are trying to provide them a supportive atmosphere where they can try to achieve happiness, wellness and other basic needs like proper nutrition, cleanliness, medical care and skill development.
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<div id="WhatWeDo">
+		<div class="card heading-card z-depth-3 peach-gradient">
+		  	<div class="card-body">
+		    	<h5 class="white-text">What We Do</h5>
+		  	</div>
+		</div>
+		<div class="card sub-card z-depth-3">
+			<div class="card-body">
+				<p class="card-text">
+					Women are the <b>pillars of society</b> and when women are empowered the whole society is empowered and when a girl child is educated a whole generation sees change. Education holds the key to development, economic growth and social transformation.<br><br>
+					We help them to acquire new <b>skills</b> and encourage them to <b>study and develop personally</b>, socially as well as economically. Income determines the quality if life of a person, by learning new skills one can improve standards of health and living. We help them to learn new skills, develop new interests and abilities, learn technical skills and communication.<br><br>
+					We spread awareness about the need to look after the <b>elderly</b>, empower them by providing them supportive system and medical care, improve their mental health by <b>Stress Management</b>, improve their standards of health and living, provide them with trained staff in <b>Pain Management</b> and try to full fill most of their basic needs and attend to their call of distress.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="Events">
+		<div class="card heading-card z-depth-3 peach-gradient">
+		  	<div class="card-body">
+		    	<h5 class="white-text">Our Events</h5>
+		  	</div>
+		</div>
+		<div class="card sub-card z-depth-3">
+			<div class="card-body">
+				<div id="event-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+				  	<ol class="carousel-indicators">
+				    	<li data-target="#event-carousel" data-slide-to="0" class="active"></li>
+				    	<li data-target="#event-carousel" data-slide-to="1"></li>
+				    	<li data-target="#event-carousel" data-slide-to="2"></li>
+				  	</ol>
+				  	<div class="carousel-inner" role="listbox">
+				    	<div class="carousel-item active">
+				    	  	<div class="view">
+				        		<img class="d-block w-100" src="../img/comingsoon.png" alt="{{ site.title }}">
+				    		</div>
+				    		<!--<div class="carousel-caption">
+				        		<h3 class="h3-responsive">Coming</h3>
+				        		<p>Soon</p>
+				    		</div>-->
+				    	</div>
+				  	</div>
+				  	<a class="carousel-control-prev" href="#event-carousel" role="button" data-slide="prev">
+				    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    	<span class="sr-only">Previous</span>
+				  	</a>
+				  	<a class="carousel-control-next" href="#event-carousel" role="button" data-slide="next">
+				    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    	<span class="sr-only">Next</span>
+				  	</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="Gallery">
+		<div class="card heading-card z-depth-3 peach-gradient">
+		  	<div class="card-body">
+		    	<h5 class="white-text">Gallery</h5>
+		  	</div>
+		</div>
+		<div class="card sub-card z-depth-3">
+			<div class="card-body">
+				<div class="white-text" id="instagram-feed1"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+  (function($){
+    $(window).on('load', function(){
+      $.instagramFeed({
+        'username': 'idhika_foundation',
+        'container': "#instagram-feed1",
+        'display_profile': false,
+        'display_biography': false,
+        'display_gallery': true,
+        'callback': null,
+        'styling': true,
+        'items': 12,
+        'items_per_row': 3,
+        'margin': 2 
+      });
+    });
+  })(jQuery);
+</script>
+
+<script>
+	$("a[href^='#']").click(function(e) {
+		e.preventDefault();
+		
+		var position = $($(this).attr("href")).offset().top;
+
+		$("body, html").animate({
+			scrollTop: position
+		}, 300 );
+	});
+</script>
+
+<script src="../js/jquery.instagramFeed.min.js"></script>
