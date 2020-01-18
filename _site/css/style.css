@@ -12,7 +12,7 @@
     font-style: normal;
     font-display: swap;
 }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; visibility: visible; opacity: 1;}
 body { font-family: OSR; }
 .btn-circle {
 	display: flex;
