@@ -31,7 +31,7 @@
 	<noscript><link rel="stylesheet" href="../css/mdb.min.css"></noscript>
 	<noscript><link rel="stylesheet" href="../css/all.css"></noscript>
 	<noscript><link rel="stylesheet" href="../css/style.css"></noscript>
-	<script type="text/javascript" src="../js/jquery.min.js" async></script>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
 	<script type="text/javascript">
 		/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 		(function( w ){
@@ -117,7 +117,7 @@
 <body>
 	<header>
 		<nav class="navbar navbar-expand-lg fixed-top navbar-dark amber darken-2 z-depth-3">
-			<a href="http://192.168.0.104:4000">
+			<a href="http://192.168.0.109:4000">
 				<img class="idhika-logo" src="../img/if_logo_text_small.svg" alt="">
 			</a>
 			<button class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -126,19 +126,19 @@
 			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 				<ul class="navbar-nav">
 				    <li class="nav-item">
-				       	<a class="nav-link btn white black-text z-depth-3" href="#WhoWeAre"><b>About Us</b></a>
+				       	<a class="nav-link btn white black-text hoverable" href="#WhoWeAre"><b>About Us</b></a>
 				    </li>
 				    <li class="nav-item">
-				       	<a class="nav-link btn white black-text z-depth-3" href="#WhatWeDo"><b>Our Work</b></a>
+				       	<a class="nav-link btn white black-text hoverable" href="#WhatWeDo"><b>Our Work</b></a>
 				    </li>
 				    <li class="nav-item">
-				       	<a class="nav-link btn white black-text z-depth-3" href="#Events"><b>Events</b></a>
+				       	<a class="nav-link btn white black-text hoverable" href="#Events"><b>Events</b></a>
 				    </li>
 				    <li class="nav-item">
-				       	<a class="nav-link btn white black-text z-depth-3" href="#Gallery"><b>Gallery</b></a>
+				       	<a class="nav-link btn white black-text hoverable" href="#Gallery"><b>Gallery</b></a>
 				    </li>
 				    <li class="nav-item">
-				        <a class="nav-link btn white black-text z-depth-3" href="#Contact"><b>Contact Us</b></a>
+				        <a class="nav-link btn white black-text hoverable" href="#Contact"><b>Contact Us</b></a>
 				    </li>
 				</ul>
 			</div>
@@ -146,11 +146,16 @@
 	</header>
 
 	<main>
-		<div class="banner"></div>
-
+		<div>
+	<picture>
+		<source srcset="../img/hero4.webp" type="image/webp">
+		<source srcset="../img/hero4.jpg" type="image/jpeg">
+		<img src="../img/hero4.jpg" class="banner">
+	</picture>
+</div>
 <div class="container">
 	<div id="WhoWeAre">
-		<div class="card heading-card z-depth-3 peach-gradient">
+		<div class="card heading-card z-depth-2 peach-gradient">
 		  	<div class="card-body">
 		    	<h5 class="white-text">Who We Are</h5>
 		  	</div>
@@ -166,7 +171,7 @@
 	</div>
 	
 	<div id="WhatWeDo">
-		<div class="card heading-card z-depth-3 peach-gradient">
+		<div class="card heading-card z-depth-2 peach-gradient">
 		  	<div class="card-body">
 		    	<h5 class="white-text">What We Do</h5>
 		  	</div>
@@ -183,7 +188,7 @@
 	</div>
 
 	<div id="Events">
-		<div class="card heading-card z-depth-3 peach-gradient">
+		<div class="card heading-card z-depth-2 peach-gradient">
 		  	<div class="card-body">
 		    	<h5 class="white-text">Our Events</h5>
 		  	</div>
@@ -199,7 +204,10 @@
 				  	<div class="carousel-inner" role="listbox">
 				    	<div class="carousel-item active">
 				    	  	<div class="view">
-				        		<img class="d-block w-100 lazyload" data-src="../img/comingsoon.png" alt="">
+				    	  		<picture>
+				    	  			<source type="image/webp" data-srcset="../img/comingsoon.webp">
+				    	  			<img class="d-block w-100 lazyload" data-src="../img/comingsoon.png">
+				    	  		</picture>
 				    		</div>
 				    		<!--<div class="carousel-caption">
 				        		<h3 class="h3-responsive">Coming</h3>
@@ -221,7 +229,7 @@
 	</div>
 	
 	<div id="Gallery">
-		<div class="card heading-card z-depth-3 peach-gradient">
+		<div class="card heading-card z-depth-2 peach-gradient">
 		  	<div class="card-body">
 		    	<h5 class="white-text">Gallery</h5>
 		  	</div>
@@ -293,7 +301,7 @@
 		    </div>
 		</div>
 		<div class="footer-copyright text-center py-3"><b>© 2020 Copyright:</b>
-			<a href="http://192.168.0.104:4000}"> <b>Idhika Foundation</b></a>
+			<a href="http://192.168.0.109:4000}"> <b>Idhika Foundation</b></a>
 		</div>
 	</footer>
 	<script>
